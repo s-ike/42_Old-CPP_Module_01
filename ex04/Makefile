@@ -32,10 +32,6 @@ fclean:		clean
 
 re:			fclean $(NAME)
 
-leaks:
-			$(MAKE) CXXFLAGS="$(CXXFLAGS) -g -D LEAKS=1"
-
 -include	$(DEPENDS)
 
 .PHONY:		all clean fclean re
-.PHONY:		leaks
