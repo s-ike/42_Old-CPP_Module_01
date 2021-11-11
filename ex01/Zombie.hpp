@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 14:46:21 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/10 15:26:31 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/11 11:48:11 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ public:
 	Zombie(const std::string &name = "default");
 	~Zombie();
 
-	void	announce() const;
+	void	announce( void ) const;
 	void	set_name(const std::string &name);
 };
 
