@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 21:03:30 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/10 21:47:17 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/11 13:21:57 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,20 +17,20 @@
 std::string	ft_replace(
 	std::string line,
 	const std::string &find,
-	const std::string &new_str)
+	const std::string &newstr)
 {
 	const size_t	find_len = find.size();
 
 	if (find_len == 0)
 		return line;
-	if (find == new_str)
+	if (find == newstr)
 		return line;
 
 	size_t	pos;
 	while ((pos = line.find(find)) != std::string::npos)
 	{
 		line.erase(pos, find_len);
-		line.insert(pos, new_str);
+		line.insert(pos, newstr);
 	}
 	return line;
 }
@@ -69,6 +69,7 @@ int	main(int argc, char **argv)
 		}
 
 		std::string	line;
+
 		while (std::getline(ifs, line))
 			ofs << ft_replace(line, argv[STR1], argv[STR2]) << std::endl;
 		}

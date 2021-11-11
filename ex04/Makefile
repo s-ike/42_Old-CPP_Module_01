@@ -1,4 +1,4 @@
-NAME		:= a.out
+NAME		:= replace
 SRCS		:= main.cpp
 OBJDIR		:= ./objs/
 OBJS		:= $(addprefix $(OBJDIR), $(SRCS:.cpp=.o))
