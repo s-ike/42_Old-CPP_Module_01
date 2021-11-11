@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 17:13:23 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/10 17:13:23 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/11 13:15:17 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,8 @@ class Weapon
 
 public:
 	Weapon(const std::string &type = "");
-	~Weapon();
-
-	std::string	getType() const;
-	void		setType(const std::string &type);
+	const std::string	getType() const;
+	void				setType(const std::string &type);
 };
 
 #endif

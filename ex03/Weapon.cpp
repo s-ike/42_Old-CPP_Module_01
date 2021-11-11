@@ -6,7 +6,7 @@
 /*   By: sikeda <sikeda@student.42tokyo.jp>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 17:13:29 by sikeda            #+#    #+#             */
-/*   Updated: 2021/11/10 17:13:37 by sikeda           ###   ########.fr       */
+/*   Updated: 2021/11/11 13:13:20 by sikeda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,7 @@ Weapon::Weapon(const std::string &type)
 	: type(type)
 {}
 
-Weapon::~Weapon()
-{}
-
-std::string	Weapon::getType() const
+const std::string	Weapon::getType() const
 {
 	return type;
 }
